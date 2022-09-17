@@ -1,0 +1,168 @@
+body {
+  background-color: #0b0c1e;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  max-width: 300px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #171829;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+}
+
+button {
+  background-color: transparent;
+  font-size: 22px;
+  border: none;
+  color: #83848c;
+}
+
+input {
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 5px;
+  width: 200px;
+  border-radius: 15px;
+  background-color: #171829;
+  color: #83848c;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav i {
+  color: #0370c1;
+}
+
+.nav span {
+  font-size: 15px;
+  color: #fff;
+}
+
+.today {
+  color: #fff;
+}
+.bg {
+  position: relative;
+  margin-top: 25px;
+}
+.two-divs {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 40px;
+  left: 15%;
+  gap: 40px;
+}
+.orange,
+.blue {
+  width: 120px;
+  height: 110px;
+  border-radius: 50%;
+  filter: blur(30px);
+  opacity: 0.2;
+}
+
+.orange {
+  background-color: rgb(255, 151, 53);
+}
+.blue {
+  background-color: rgb(24, 86, 255);
+}
+
+.clouds {
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.main h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 25px !important;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#degree {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  display: block;
+}
+
+.temp {
+  display: flex;
+  justify-content: center;
+}
+
+.temp sup {
+  color: #0370c1;
+  display: block;
+  font-size: 20px;
+}
+.more-info {
+  display: flex;
+  justify-content: space-between;
+  color: #d4d4d7;
+  margin-top: 15px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info * {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+.info-img1 {
+  width: 100px !important;
+}
+.info-img {
+  width: 50px;
+}
+.loading {
+  visibility: hidden;
+  position: relative;
+}
+.before::before {
+  content: "Loading";
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #d4d4d7;
+  z-index: 10;
+  visibility: visible;
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}

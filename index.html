@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/9f0acbb3f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <input type="text" placeholder="City" id="search-bar" />
+        <button id="search">
+          <i class="fa-solid fa-magnifying-glass-location"></i>
+        </button>
+      </div>
+
+      <div class="nav">
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <span id="city"></span>
+        </div>
+      </div>
+      <div class="loading before" id="loading">
+        <div class="main">
+          <h2 class="today">Today's Report</h2>
+          <div class="bg">
+            <div class="two-divs">
+              <div class="orange"></div>
+              <div class="blue"></div>
+            </div>
+            <img id="cloud" class="clouds" alt="Clouds" src="" />
+          </div>
+
+          <h3 id="description">Its Cloudly</h3>
+          <div class="temp">
+            <p id="degree">29</p>
+            <sup>°</sup>
+          </div>
+
+          <div class="more-info">
+            <div class="info">
+              <img src="./images/wind.webp" alt="Clouds" class="info-img1" />
+              <p id="speed">3 km/h</p>
+              <p>Wind</p>
+            </div>
+            <div class="info">
+              <img src="./images/humidity.png" alt="Clouds" class="info-img" />
+              <p id="humidity">30%</p>
+              <p>Humidity</p>
+            </div>
+            <div class="info">
+              <img src="./images/pressure.png" class="info-img" />
+              <p id="pressure">3 km/h</p>
+              <p>pressure</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
